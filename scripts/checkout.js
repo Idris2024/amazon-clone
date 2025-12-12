@@ -6,7 +6,8 @@ import { loadCart } from "../data/cart.js";
 // import '../data/backend-practice.js';
 
 async function loadPage() {
-    await loadProductsFetch();
+    try{
+        await loadProductsFetch();
 
 
     await new Promise((resolve) => {
@@ -14,6 +15,11 @@ async function loadPage() {
                 resolve();
             });
         });
+        
+    } catch (error) {
+        console.log('Unexpected error. Please try again later.');
+    }
+    
 
 
     renderOrderSummary();
