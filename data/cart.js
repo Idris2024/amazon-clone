@@ -74,6 +74,12 @@ export function updateDeliveryOption(productId, deliveryOptionId) {
         saveToStorage();
 }
 
+export function clearCart() {
+  cart.length = 0;
+  saveToStorage();
+}
+
+
 export function loadCart(fun) {
   const xhr = new XMLHttpRequest();
 
