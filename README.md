@@ -3,6 +3,7 @@
 A simple Amazon-like e-commerce project built with vanilla JavaScript.
 
 ## Features
+- Home page
 - Add to cart
 - Checkout
 - Place orders
